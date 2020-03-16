@@ -18,22 +18,20 @@ public class GastoServiceImpl implements GastoService{
     private GastoRepositoryCustom gastoRepository;
 
     /**
-     * Salva um novo gasto
-     * 
+     * Metdodo responsavel por listar todos os gastos
+     * por usuario
      * @param novoGasto
      * @return
      */
-
     @Override
-    public Iterable<Gasto> listarTodos() {
-        return gastoRepository.findAll();
+    public List<Gasto> listarTodos(Long idUsuaio) {
+        return gastoRepository.findByIdUsuario(idUsuaio);
     }
 
-    @Override
-    public void excluir(Long id) throws IllegalArgumentException{
-        gastoRepository.deleteById(id);
-    }
 
+    /**
+     * Salva um novo gasto
+     */
     @Override
     public Gasto salvar(Gasto novoGasto) {
         return gastoRepository.save(novoGasto);

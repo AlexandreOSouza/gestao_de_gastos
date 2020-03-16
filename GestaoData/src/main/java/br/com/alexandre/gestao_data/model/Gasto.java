@@ -8,6 +8,7 @@ import org.springframework.data.redis.core.index.Indexed;
 
 /**
  * Gasto
+ * Classe modelo que representa o Gasto de um usuario
  */
 @RedisHash("Gasto")
 public class Gasto {
@@ -21,21 +22,18 @@ public class Gasto {
     private Integer codigoUsuario;
     @Indexed
     private Calendar data;
-    @Indexed
-    private Categoria categoria;
 
 
     public Gasto() {
     }
 
 
-    public Gasto(Long gastoId, String descricao, Double valor, Integer codigoUsuario, Calendar data, Categoria categoria) {
+    public Gasto(Long gastoId, String descricao, Double valor, Integer codigoUsuario, Calendar data) {
         this.gastoId = gastoId;
         this.descricao = descricao;
         this.valor = valor;
         this.codigoUsuario = codigoUsuario;
         this.data = data;
-        this.categoria = categoria;
     }
 
     public Integer getCodigoUsuario() {
@@ -89,14 +87,6 @@ public class Gasto {
 
     public void setGastoId(Long gastoId) {
         this.gastoId = gastoId;
-    }
-
-    public Categoria getCategoria() {
-        return this.categoria;
-    }
-
-    public void setCategoria(Categoria categoria) {
-        this.categoria = categoria;
     }
 
 }
