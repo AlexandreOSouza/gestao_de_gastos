@@ -1,1 +1,1 @@
-# gestao_de_gastos
+# API REST para a gestão de gastos
