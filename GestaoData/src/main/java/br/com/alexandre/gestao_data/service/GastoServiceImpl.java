@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.alexandre.gestao_data.model.Gasto;
-import br.com.alexandre.gestao_data.repository.GastoRepository;
+import br.com.alexandre.gestao_data.repository.GastoRepositoryCustom;
 
 /**
  * GastoService
@@ -15,7 +15,7 @@ import br.com.alexandre.gestao_data.repository.GastoRepository;
 public class GastoServiceImpl implements GastoService{
 
     @Autowired
-    private GastoRepository gastoRepository;
+    private GastoRepositoryCustom gastoRepository;
 
     /**
      * Salva um novo gasto
@@ -30,8 +30,8 @@ public class GastoServiceImpl implements GastoService{
     }
 
     @Override
-    public void excluir(Integer id) throws IllegalArgumentException{
-        gastoRepository.deleteById(String.valueOf(id));
+    public void excluir(Long id) throws IllegalArgumentException{
+        gastoRepository.deleteById(id);
     }
 
     @Override

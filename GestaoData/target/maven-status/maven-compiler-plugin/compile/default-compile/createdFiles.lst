@@ -1,0 +1,8 @@
+br/com/alexandre/gestao_data/model/Categoria.class
+br/com/alexandre/gestao_data/model/Gasto.class
+br/com/alexandre/redis/config/RedisConfig.class
+br/com/alexandre/gestao_data/GestaoApplication.class
+br/com/alexandre/gestao_data/repository/GastoRepositoryCustom.class
+br/com/alexandre/gestao_data/service/GastoServiceImpl.class
+br/com/alexandre/gestao_data/repository/CategoriaRepositoryCustom.class
+br/com/alexandre/gestao_data/service/GastoService.class

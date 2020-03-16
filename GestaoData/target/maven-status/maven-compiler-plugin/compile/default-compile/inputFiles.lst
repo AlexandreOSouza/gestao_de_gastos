@@ -1,0 +1,8 @@
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/GestaoApplication.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/repository/CategoriaRepositoryCustom.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/service/GastoService.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/repository/GastoRepositoryCustom.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/redis/config/RedisConfig.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/model/Categoria.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/model/Gasto.java
+/home/alexandre/Documents/IBM/gestao_de_gastos/gestao_de_gastos/GestaoData/src/main/java/br/com/alexandre/gestao_data/service/GastoServiceImpl.java

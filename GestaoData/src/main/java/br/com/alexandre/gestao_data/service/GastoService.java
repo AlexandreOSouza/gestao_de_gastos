@@ -9,5 +9,5 @@ public interface GastoService {
 
     public Gasto salvar(Gasto novoGasto);
     public Iterable<Gasto> listarTodos();
-    public void excluir(Integer id) throws IllegalArgumentException;
+    public void excluir(Long id) throws IllegalArgumentException;
 }
