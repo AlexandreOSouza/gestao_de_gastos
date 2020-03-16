@@ -51,31 +51,6 @@ public class Gasto {
         return this;
     }
 
-    public Gasto descricao(String descricao) {
-        this.descricao = descricao;
-        return this;
-    }
-
-    public Gasto valor(Double valor) {
-        this.valor = valor;
-        return this;
-    }
-
-    public Gasto codigoUsuario(Integer codigoUsuario) {
-        this.codigoUsuario = codigoUsuario;
-        return this;
-    }
-
-    public Gasto data(Calendar data) {
-        this.data = data;
-        return this;
-    }
-
-    public Gasto categoria(Categoria categoria) {
-        this.categoria = categoria;
-        return this;
-    }
-
     public Calendar getData() {
         return this.data;
     }
