@@ -24,8 +24,8 @@ public class GastoServiceImpl implements GastoService{
      * @return
      */
     @Override
-    public List<Gasto> listarTodos(Long idUsuaio) {
-        return gastoRepository.findByIdUsuario(idUsuaio);
+    public List<Gasto> listarTodos(Long idUsuario) {
+        return gastoRepository.findByCodigoUsuario(idUsuario);
     }
 
 

@@ -1,10 +1,20 @@
 package br.com.alexandre.gestao_data.model;
 
+import java.time.LocalDateTime;
 import java.util.Calendar;
+import java.util.Date;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.datatype.jsr310.deser.LocalDateTimeDeserializer;
+import com.fasterxml.jackson.datatype.jsr310.ser.LocalDateTimeSerializer;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.redis.core.RedisHash;
 import org.springframework.data.redis.core.index.Indexed;
+import org.springframework.format.annotation.DateTimeFormat;
 
 /**
  * Gasto
@@ -21,14 +31,14 @@ public class Gasto {
     @Indexed
     private Integer codigoUsuario;
     @Indexed
-    private Calendar data;
+    private LocalDateTime data;
 
 
     public Gasto() {
     }
 
 
-    public Gasto(Long gastoId, String descricao, Double valor, Integer codigoUsuario, Calendar data) {
+    public Gasto(Long gastoId, String descricao, Double valor, Integer codigoUsuario, LocalDateTime data) {
         this.gastoId = gastoId;
         this.descricao = descricao;
         this.valor = valor;
@@ -44,27 +54,17 @@ public class Gasto {
         this.codigoUsuario = codigoUsuario;
     }
 
-    public Gasto gastoId(Long gastoId) {
-        this.gastoId = gastoId;
-        return this;
-    }
-
-    public Calendar getData() {
+    @JsonSerialize(using = LocalDateTimeSerializer.class)
+    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonProperty("date")
+    public LocalDateTime getData() {
         return this.data;
     }
     
-    public void setData(Calendar data) {
+    public void setData(LocalDateTime data) {
         this.data = data;
     }
 
-    public Integer getIdUsuario() {
-        return this.codigoUsuario;
-    }
-
-    public void setIdUsuario(Integer idUsuario) {
-        this.codigoUsuario = idUsuario;
-    }
-    
     public Double getValor() {
         return this.valor;
     }

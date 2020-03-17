@@ -19,6 +19,6 @@ public interface GastoRepositoryCustom extends CrudRepository<Gasto, Long> {
      * @param idUsuario
      * @return
      */
-    public List<Gasto> findByIdUsuario(Long idUsuario);
+    public List<Gasto> findByCodigoUsuario(Long idUsuario);
     
 }
