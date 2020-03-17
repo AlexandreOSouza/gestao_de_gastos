@@ -1,4 +1,4 @@
-package demo.spring.boot.jwt.controller;
+package br.com.alexandre.auth.controller;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

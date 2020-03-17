@@ -1,15 +1,15 @@
-package demo.spring.boot.jwt;
+package br.com.alexandre.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 
-import demo.spring.boot.jwt.security.SecurityFilter;
+import br.com.alexandre.auth.security.SecurityFilter;
 
 
 @SpringBootApplication
-public class SpringBootJwtApplication {
+public class AuthApplication {
 	
 	/**
 	 * Configuração do pattern dos endpoints que serão interceptados pelo @SecurityFilter
@@ -17,7 +17,7 @@ public class SpringBootJwtApplication {
 	private static final String URL_PATTERN = "/api/*";
 
 	public static void main(String[] args) {
-		SpringApplication.run(SpringBootJwtApplication.class, args);
+		SpringApplication.run(AuthApplication.class, args);
 	}
 	
 	@Bean

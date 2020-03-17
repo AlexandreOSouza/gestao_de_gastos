@@ -1,4 +1,4 @@
-package demo.spring.boot.jwt.security;
+package br.com.alexandre.auth.security;
 
 import java.io.Serializable;
 
