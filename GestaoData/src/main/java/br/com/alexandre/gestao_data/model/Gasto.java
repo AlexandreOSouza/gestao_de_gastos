@@ -39,11 +39,11 @@ public class Gasto {
 
 
     public Gasto(Long gastoId, String descricao, Double valor, Integer codigoUsuario, LocalDateTime data) {
-        this.gastoId = gastoId;
-        this.descricao = descricao;
-        this.valor = valor;
-        this.codigoUsuario = codigoUsuario;
-        this.data = data;
+        setGastoId(gastoId);
+        setDescricao(descricao);
+        setValor(valor);
+        setCodigoUsuario(codigoUsuario);
+        setData(data);
     }
 
     public Integer getCodigoUsuario() {
