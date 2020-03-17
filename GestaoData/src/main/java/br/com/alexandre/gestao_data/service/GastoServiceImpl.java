@@ -1,6 +1,7 @@
 package br.com.alexandre.gestao_data.service;
 
 import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.List;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -27,21 +28,17 @@ public class GastoServiceImpl implements GastoService{
      * @return
      */
     @Override
-    public List<Gasto> listarTodos(Long idUsuario) {
-        return gastoRepository.findByCodigoUsuario(idUsuario)
-                .stream()
-                .filter(gasto -> gasto
-                    .getData()
-                    .isAfter(LocalDateTime.now().minusSeconds(5))
-                ).collect(Collectors.toList());
+    public List<Gasto> listarTodos(final Long idUsuario) {
+        return gastoRepository.findByCodigoUsuario(idUsuario).stream()
+                .filter(gasto -> gasto.getData().isAfter(LocalDateTime.now().minusSeconds(5)))
+                .collect(Collectors.toList());
     }
-
 
     /**
      * Salva um novo gasto
      */
     @Override
-    public Gasto salvar(Gasto novoGasto) {
+    public Gasto salvar(final Gasto novoGasto) {
         return gastoRepository.save(novoGasto);
     }
 

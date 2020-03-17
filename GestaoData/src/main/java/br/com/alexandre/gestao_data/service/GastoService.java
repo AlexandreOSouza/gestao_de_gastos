@@ -1,5 +1,6 @@
 package br.com.alexandre.gestao_data.service;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 import br.com.alexandre.gestao_data.model.Gasto;
@@ -23,4 +24,5 @@ public interface GastoService {
      * @return
      */
     public List<Gasto> listarTodos(Long idCliente);
+
 }

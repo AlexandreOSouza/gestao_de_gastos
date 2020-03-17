@@ -1,6 +1,8 @@
 package br.com.alexandre.inclusao.controller;
 
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -30,7 +32,7 @@ public class GastoInclusao {
     }
     
     @RequestMapping(value = "/gastos", method = RequestMethod.GET)
-    public ResponseEntity<Iterable<Gasto>> listarGastos(@RequestParam Long idUsuario) {
+    public ResponseEntity<List<Gasto>> listarGastos(@RequestParam Long idUsuario) {
         return ResponseEntity.ok(service.listarTodos(idUsuario));
     }
 

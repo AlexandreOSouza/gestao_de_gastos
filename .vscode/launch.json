@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateTimeFormat",
+            "request": "launch",
+            "mainClass": "br.com.alexadre.inclusao.DateTimeFormat",
+            "projectName": "inclusao"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DateTimeFormat<data>",
+            "request": "launch",
+            "mainClass": "br.com.alexandre.gestao.DateTimeFormat",
+            "projectName": "data"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-GestaoApplication<data>",
+            "request": "launch",
+            "mainClass": "br.com.alexandre.gestao_data.GestaoApplication",
+            "projectName": "data"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-InclusaoApplication<inclusao>",
+            "request": "launch",
+            "mainClass": "br.com.alexandre.inclusao.InclusaoApplication",
+            "projectName": "inclusao"
+        }
+    ]
+}
