@@ -20,6 +20,9 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
 
+/**
+ * Filtro para fazer a autenticação nas request
+ */
 public class SecurityFilter extends GenericFilterBean {
 
 	@Override

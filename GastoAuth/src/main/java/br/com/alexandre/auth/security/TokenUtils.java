@@ -9,6 +9,9 @@ import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
+/**
+ * Classe para ajudar a criar um token
+ */
 public final class TokenUtils {
 
 	private static final String  TOKEN_SECRET = "4a1a71a9ebb86dad178c14efb6wed2";
