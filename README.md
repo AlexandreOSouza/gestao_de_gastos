@@ -13,7 +13,7 @@
 >### A aplicação até o momento contém dois end-points, um para o cadastro de um novo gasto, e outro para a listagem dos gastos nos últimos 5 segundos.
 
 >## Iniciando o projeto
->### Para rodar o projeto, clone ou baixe o projeto. Você presisará buildar os três servições. faça:
+>### Para rodar o projeto, clone ou baixe o projeto. Você presisará buildar os três servições e subir o Redis no servidor na porta 6379. faça:
 >- ### `mvn clean install` ( Para buildar )
 >- ### `mvn spring-boot:run` ( Para rodar os serviços ( esse comando não é dado em GestaoData ) )
 
