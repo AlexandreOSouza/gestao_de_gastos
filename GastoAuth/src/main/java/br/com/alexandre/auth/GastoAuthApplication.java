@@ -1,4 +1,4 @@
-package br.com.alexandre.auth.GastoAuth;
+package br.com.alexandre.auth;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
